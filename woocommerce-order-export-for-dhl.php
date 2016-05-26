@@ -71,7 +71,6 @@ class WcOrderExportForDHL {
             $order = new WC_Order_Factory();
             $order = $order->get_order( $post_id );
             $order_id = $order->id;
-            //$order_id = $order->id + 100000; //test
             
             $output .= $order_id . '|DHL-SHIPMENT|0||ECX|' . date('Ymd') . '|1|412294262||||||456-332||||||||P|||||||LED bulbs
 
@@ -81,7 +80,6 @@ class WcOrderExportForDHL {
 
             $order_details = array(
                 $order->shipping_company,
-                //'Company_árvíztűrőtükörfúrógép', //test only
                 '',
                 $order->get_formatted_billing_full_name(),
                 trim( $order->shipping_address_1 . ' ' . $order->shipping_address_2 ),

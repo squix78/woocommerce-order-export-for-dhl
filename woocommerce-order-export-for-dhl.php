@@ -3,7 +3,7 @@
  * Plugin Name: WooCommerce Order export for DHL
  * Description: Export orders from WooCommerce for DHL.
  * Author: David Kiss
- * Version: 1.1
+ * Version: 1.2
  */
  /**
  * Todo:
